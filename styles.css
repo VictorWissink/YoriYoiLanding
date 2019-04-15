@@ -1,0 +1,333 @@
+/*
+#######################
+Fonts
+######################
+*/
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+/*
+#######################
+Main Content
+######################
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  color: black;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	min-width: 320px;
+	max-width: 960px;
+	margin: auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	color: #ad0009;
+}
+h1 {
+	/* text-align: center; */
+  font-size: 1.6em;
+  margin-bottom: 9px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h2 {
+	text-align: center;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+p {
+  margin-bottom: 1em;
+	color: #383838;
+}
+
+/*
+#######################
+Start Grid
+######################
+*/
+
+/* Flex styles -------------------------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 6fr));
+
+
+
+  /* grid-template-columns: auto auto auto; */
+  grid-gap: 30px;
+  /* column-count: 2; */
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.bigSquare {
+	width: 100%;
+}
+
+/* Generic styles ----------------------------------------------*/
+body {
+	font-family: Inter var, sans-serif;
+  font-weight: lighter;
+  font-style:normal;
+	color: black;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  max-width: 960px;
+  margin: auto;
+}
+
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	width: 93vw;
+}
+
+.leading {
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.leading-bigtext {
+  margin-right: 60px;
+  font-weight: normal;
+  font-size: 24vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  width: 49%;
+}
+
+.flip {
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+}
+
+.toprow {
+	margin-bottom: 6px;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.benefitsTitle {
+	background-color: red;
+	color: white;
+	height: 27px;
+	font-size: 2em;
+	letter-spacing: 0px;
+	text-align: center;
+	margin-top: -4px;
+}
+
+.benefitsForYou {
+	overflow-x: hidden;
+}
+
+.benefitsForPlanet {
+	overflow-x: hidden;
+}
+.product {
+  text-align:center;
+}
+.carouselDiv {
+  text-align: center;
+}
+
+.fabric {
+  width: 100%;
+  object-fit: cover;
+}
+.signup {
+	padding: 10px 10px 46px 10px;
+	Border: 0.5px solid #d2d2d2;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.keyBenefitsHeader{
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 29px;
+    letter-spacing: 0.2em;
+}
+.sketchbook{
+width: 100%;
+}
+
+.fabricCard {
+  background-image: url("./Images/fabric.jpg");
+  background-size: cover;
+  height: 250px;
+}
+
+.item {
+	min-height: 100px;
+}
+
+.item p {
+  margin-top: 0.5em;
+  text-align: justify;
+	padding-left: 100px;
+}
+
+.item h2 {
+	margin-top: 1em;
+	padding-left: 100px;
+	text-align: left;
+}
+
+.item-img {
+	display: block;
+  width: 80px;
+	margin-left: auto;
+  margin-right: auto;
+	float: left;
+}
+
+.email {
+	padding: 10px;
+	width: 56%;
+	float: left;
+	border: 1px;
+	    Border: 0.5px solid #d2d2d2;
+}
+.button {
+    -webkit-appearance: none;
+	padding: 10px;
+	width: 36%;
+	float: right;
+	background-color: #ff1c24;
+	color: white;
+	text-transform: uppercase;
+	border-width: 1px;
+}
+
+@media only screen and (min-width: 480px) {
+  .button {
+		width: 30%;
+  }
+  .email {
+	width: 64%;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(250px, 6fr));
+ }
+ .carousel .article-img {
+   width: 24%;
+ }
+ .fabricCard{
+   height: auto;
+ }
+ .logo {
+   width: 47vw;
+   margin: 0vw;
+   max-width: 470px;
+ }
+ .item h2 {
+   padding-left: 100px;
+ }
+ .item {
+   min-height: 100px;
+ }
+}
