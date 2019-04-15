@@ -41,6 +41,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+  overflow-x: hidden;
 	line-height: 1;
 	min-width: 320px;
 	max-width: 960px;
@@ -105,18 +106,16 @@ header {
 .cards {
   display: grid;
   grid-template-columns: repeat(1, minmax(250px, 6fr));
-
-
-
-  /* grid-template-columns: auto auto auto; */
   grid-gap: 30px;
-  /* column-count: 2; */
   column-gap: 20px;
   padding: 10px;
 }
-
 .bigSquare {
 	width: 100%;
+}
+
+.textBlocks {
+
 }
 
 /* Generic styles ----------------------------------------------*/
@@ -224,13 +223,16 @@ article {
 .product {
   text-align:center;
 }
-.carouselDiv {
-  text-align: center;
+.carousel {
+  overflow-x: hidden;
 }
 
 .fabric {
   width: 100%;
   object-fit: cover;
+}
+.fullArticleImg {
+  width: 100%;
 }
 .signup {
 	padding: 10px 10px 46px 10px;
@@ -308,7 +310,6 @@ width: 100%;
   }
 }
 
-
 @media only screen and (min-width: 600px) {
   .cards {
     grid-template-columns: repeat(2, minmax(250px, 6fr));
@@ -330,4 +331,15 @@ width: 100%;
  .item {
    min-height: 100px;
  }
+article:nth-child(0) { order:0; }
+article:nth-child(1) { order:1; }
+article:nth-child(2) { order:2; }
+article:nth-child(3) { order:4; }
+article:nth-child(4) { order:3; }
+article:nth-child(5) { order:5; }
+article:nth-child(6) { order:6; }
+article:nth-child(7) { order:8; }
+article:nth-child(8) { order:7; }
+article:nth-child(9) { order:9; }
+article:nth-child(10) { order:10; }
 }
