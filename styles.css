@@ -337,14 +337,14 @@ width: 100%;
   text-align: center;
   padding-bottom: 50px;
 }
+
+.socials a {
+  color: #ffffff;
+}
 .socialMediaIcon{
  width: 30vw;
  max-width: 155px
 }
-
-
-
-
 
 @media only screen and (min-width: 480px) {
   .button {
