@@ -260,7 +260,7 @@ width: 100%;
 }
 
 .fabricCard {
-  background-image: url("/Images/fabric.jpg");
+  background-image: url("Images/fabric.jpg");
   background-size: cover;
   height: 250px;
 }
